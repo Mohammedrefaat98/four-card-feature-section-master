@@ -1,0 +1,75 @@
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+:root{
+    --Red: hsl(0, 78%, 62%);
+    --Cyan: hsl(180, 62%, 55%);
+    --Orange: hsl(34, 97%, 64%);
+    --Blue: hsl(212, 86%, 64%);
+    --Very-Dark-Blue: hsl(234, 12%, 34%);
+    --Grayish-Blue: hsl(229, 6%, 66%);
+    --Very-Light-Gray: hsl(0, 0%, 98%);
+    --Weight-200: 200;
+    --Weight-400: 400;
+    --Weight-600: 600;
+}
+
+html,body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-family: "Poppins", sans-serif;
+    background-color: var(--Very-Light-Gray);
+}
+h1, h2{
+    line-height: 0.1;
+    font-size: 2rem;
+    color: var(--Very-Dark-Blue);
+}
+h3, h4, h5, h6{
+    line-height: 0.1;
+    font-size: 1rem;
+    color: var(--Very-Dark-Blue);
+    margin: 1.5rem 0;
+}
+h1{
+    font-weight: var(--Weight-200);
+}
+h2{
+    font-weight: var(--Weight-600);
+}
+.text-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.text-container p{
+    width: 60%;
+    text-align: center;
+    color: var(--Grayish-Blue);
+}
+.cards-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.side-subcontainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.middle-subcontainer{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    align-items: center;
+    margin: 0 2rem;
+    row-gap: 1em;
+}
+
+.middle-subcontainer div{
+    box-shadow: 5px 5px 20px 0 var(--Grayish-Blue);
+    padding: 0 2rem;
+}
