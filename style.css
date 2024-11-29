@@ -79,6 +79,9 @@ p{
     border-top: 0.4em solid;
 }
 
+.card p{
+    color: var(--Grayish-Blue);
+}
 .icon{
     display: flex;
     justify-content: end;
